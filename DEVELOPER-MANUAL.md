@@ -3,18 +3,19 @@
 ## Commands by category
 | Category                 | Commands |
 |--------------------------|----------|
-| Code flow                | [`CHOICE`](#choiceexpression-value1-value2) ⁕ `CONTINUE` ⁕ `DO` ... `LOOP` ⁕ `DO WHILE` ... `LOOP` ⁕ `END FUNCTION` ⁕ `END SUB` ⁕ `EXIT DO` ⁕ `EXIT FOR` ⁕ `EXIT FUNCTION` ⁕ `EXIT SUB` ⁕ `FOR` ⁕ [`FUNCTION`](#function-name-arg1-as-type-arg2-as-type-as-type) ⁕ `GOTO` ⁕ [`IF` ... `THEN`](#if-expr1-then-expr2) ⁕ `NEXT` ⁕ [`SELECT CASE`](#select-case-var) ⁕ [`SUB`](#sub-name-arg1-as-type-arg2-as-type) |
+| Code flow                | [`CHOICE`](#choiceexpression-value1-value2) ⁕ `CONTINUE` ⁕ `CSUB` ⁕ `DO` ... `LOOP` ⁕ `DO` ... `LOOP UNTIL` ⁕ `DO WHILE` ... `LOOP` ⁕ `ELSE` ⁕ `ELSE IF`/`ELSEIF` ⁕ `END CSUB` ⁕ `END FUNCTION` ⁕ `END IF`/`ENDIF` ⁕ `END SUB` ⁕ `EXIT DO` ⁕ `EXIT FOR` ⁕ `EXIT FUNCTION` ⁕ `EXIT SUB` ⁕ `FOR` ⁕ [`FUNCTION`](#function-name-arg1-as-type-arg2-as-type-as-type) ⁕ `GOTO` ⁕ [`IF` ... `THEN`](#if-expr1-then-expr2) ⁕ `NEXT` ⁕ [`SELECT CASE`](#select-case-var) ⁕ [`SUB`](#sub-name-arg1-as-type-arg2-as-type) |
 | Debugging                | [`'`](#-single-quote) ⁕ `#MMDEBUG ON` ⁕ `#MMDEBUG OFF` ⁕ `MM.ERRMSG$` ⁕ `MM.ERRNO` ⁕ `#COMMENT` ⁕ [`ON ERROR ABORT`](#on-error-abort) ⁕ [`ON ERROR IGNORE`](#on-error-ignore) ⁕ [`ON ERROR SKIP`](#on-error-skip) ⁕ `REM` ⁕ `TRACE LIST` ⁕ `TRACE OFF` ⁕ `TRACE ON` |
-| Constants and variables  | `CONST` ⁕ `#DEFINE` ⁕ `DIM` ⁕ `LOCAL` ⁕ `STATIC` ⁕ `VAR CLEAR` ⁕ `VAR RESTORE` ⁕ `VAR SAVE` ⁕|
+| Constants and variables  | `CONST` ⁕ `#DEFINE` ⁕ `DIM` ⁕ `LET` ⁕ `LOCAL` ⁕ `STATIC` ⁕ `VAR CLEAR` ⁕ `VAR RESTORE` ⁕ `VAR SAVE` |
 | Device settings and info | [`MM.DEVICE$`](#mmdevice) |
-| Files and folders        | `CHDIR` ⁕ `CLOSE` ⁕ `CWD$` ⁕ `DIR$` ⁕ `EOF` ⁕ `#INCLUDE` ⁕ [`KILL`](#kill) ⁕ `LOC` ⁕ `MKDIR` ⁕ [`OPEN` ... `AS`](#open) ⁕ `RENAME` ... `AS` |
-| Graphics                 | `BLIT` ⁕ `BOX` ⁕ `CIRCLE` ⁕ [`CLS`](#cls-color) ⁕ `DRAW3D` ⁕ `LOAD BMP` ⁕ `LOAD GIF` ⁕ `LOAD JPG` ⁕ `LOAD PNG` ⁕ `LINE` ⁕ `MAP RESET` ⁕ `MAP SET` ⁕ `MODE` ⁕ `PAGE COPY` ⁕ `PAGE DISPLAY` ⁕ `PAGE RESIZE` ⁕ `PAGE SCROLL` ⁕ `PAGE STITCH` ⁕ `PAGE WRITE` ⁕ `PIXEL` ⁕ `PIXEL FILL` ⁕ `MODE` ⁕ `RBOX` ⁕ [`RGB`](#rgb-number1-number2-number3-number4) ⁕ `SPRITE LOAD` ⁕ `SPRITE SHOW` ⁕ `TEXT` ⁕ `TRIANGLE` |
+| Files and folders        | `CHDIR` ⁕ `CLOSE` ⁕ `CWD$` ⁕ `DIR$` ⁕ `EOF` ⁕ `#INCLUDE` ⁕ [`KILL`](#kill) ⁕ `LOC` ⁕ `LOF` ⁕ `MKDIR` ⁕ [`OPEN` ... `AS`](#open) ⁕ `RENAME` ... `AS` |
+| Graphics                 | `BLIT` ⁕ `BOX` ⁕ `CIRCLE` ⁕ [`CLS`](#cls-color) ⁕ `DEFINEFONT` ⁕ `DRAW3D` ⁕ `END DEFINEFONT` ⁕ `LOAD FONT` ⁕ `LINE` ⁕ `MAP RESET` ⁕ `MAP SET` ⁕ `MODE` ⁕ `PAGE COPY` ⁕ `PAGE DISPLAY` ⁕ `PAGE RESIZE` ⁕ `PAGE SCROLL` ⁕ `PAGE STITCH` ⁕ `PAGE WRITE` ⁕ `PIXEL` ⁕ `PIXEL FILL` ⁕ `MODE` ⁕ `RBOX` ⁕ [`RGB`](#rgb-number1-number2-number3-number4) ⁕ `SPRITE LOAD` ⁕ `SPRITE SHOW` ⁕ `TEXT` ⁕ `TRIANGLE` |
+| Graphics: Images         | `IMAGE RESIZE` ⁕ `IMAGE RESIZE_FAST` ⁕ `IMAGE ROTATE` ⁕ `IMAGE ROTATE_FAST` ⁕ `IMAGE WARP_H` ⁕ `IMAGE WARP_V` ⁕ `LOAD BMP` ⁕ `LOAD GIF` ⁕ `LOAD JPG` ⁕ `LOAD PNG` |
 | Graphics: Turtle         | `TURTLE BACKWARD` ⁕ `TURTLE BEGIN FILL` ⁕ `TURTLE DRAW CIRCLE` ⁕ `TURTLE DRAW LINE` ⁕ `TURTLE DRAW PIXEL` ⁕ `TURTLE DRAW TURTLE` ⁕ `TURTLE END FILL` ⁕ `TURTLE FILL PIXEL` ⁕ `TURTLE FORWARD` ⁕ `TURTLE HEADING` ⁕ `TURTLE FILL COLOUR` ⁕ `TURTLE MOVE` ⁕ `TURTLE PEN COLOUR` ⁕ `TURTLE PEN DOWN` ⁕ `TURTLE PEN UP ` ⁕ `TURTLE RESET` ⁕ `TURTLE TURN LEFT` ⁕ `TURTLE TURN RIGHT` |
-| I/O                      | `?` ⁕ `ADC FREQUENCY` ⁕ `ADC OPEN` ⁕ `COLOR`/`COLOUR` ⁕ `DISTANCE` ⁕ [`INKEY$`](#inkey) ⁕ `PIN` ⁕  [`PRINT`](#print-port-value) ⁕ [`PRINT @`](#print-x-y-m-value) ⁕ `TEMPR` |
-| Numbers and math         | `COS` ⁕ `DEG` ⁕ `EXP` ⁕ `FIX` ⁕ `FLOAT` ⁕ `HEX$` ⁕ `INTEGER` ⁕ `SGN` ⁕ `SIN` ⁕ `SQR` ⁕ [`STR$`](#str-number) ⁕ `TAN` |
+| I/O                      | `?` ⁕ `ADC FREQUENCY` ⁕ `ADC OPEN` ⁕ `COLOR`/`COLOUR` ⁕ `CONTROLLER NUNCHUK CLOSE` ⁕ `CONTROLLER NUNCHUK OPEN` ⁕ `DISTANCE` ⁕ `HUMID` ⁕ `I2C CLOSE` ⁕ `I2C READ` ⁕ `I2C WRITE` ⁕ [`INKEY$`](#inkey) ⁕ `IR CLOSE` ⁕ `IR SEND` ⁕ `LINE INPUT` ⁕ `NUNCHUK` ⁕ `PIN` ⁕  [`PRINT`](#print-port-value) ⁕ [`PRINT @`](#print-x-y-m-value) ⁕ `TEMPR` |
+| Numbers and math         | `COS` ⁕ `DEG` ⁕ `EXP` ⁕ `FIX` ⁕ `FLOAT` ⁕ `HEX$` ⁕ `INC` ⁕ `INT` ⁕ `INTEGER` ⁕ `LOG` ⁕ `MAX` ⁕ `MIN` ⁕ `SGN` ⁕ `SIN` ⁕ `SQR` ⁕ [`STR$`](#str-number) ⁕ `TAN` |
 | Program execution        | `AUTO` ⁕ `CHAIN` ⁕ `CLEAR` ⁕ `END` ⁕ `NEW` ⁕ `RUN` |
 | Sound                    | `PLAY TONE` ⁕ `PLAYMOD` ⁕ `PLAYMOD STOP` |
-| Strings                  | `INSTR` ⁕ [`LEFT$`](#left-str-number) ⁕ `MID$` ⁕ [`RIGHT$`](#right-str-number) ⁕ `SPACE$` ⁕ `STRING` ⁕ `TAB` ⁕ `UCASE$` ⁕ `VAL` |
+| Strings                  | `INSTR` ⁕ `JSON$` ⁕ `LCASE$` ⁕ [`LEFT$`](#left-str-number) ⁕ `LEN` ⁕ `LINSTR` ⁕ `LLEN` ⁕ `LONGSTRING APPEND` ⁕ `LONGSTRING CLEAR` ⁕ `LONGSTRING COPY` ⁕ `MID$` ⁕ [`RIGHT$`](#right-str-number) ⁕ `SPACE$` ⁕ `STRING` ⁕ `TAB` ⁕ `UCASE$` ⁕ `VAL` |
 | Timing                   | `DATE$` ⁕ `DATETIME$` ⁕ `DAY$` ⁕ `EPOCH` ⁕ `GETSCANLINE` ⁕ `PAUSE` ⁕ `TIME$` ⁕ `TIMER` ⁕ `WATCHDOG` ⁕ `WATCHDOG OFF` |
 
 
