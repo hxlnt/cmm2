@@ -3,20 +3,22 @@
 ## Commands by category
 | Category                 | Commands |
 |--------------------------|----------|
-| Code flow                | [`CHOICE`](#choiceexpression-value1-value2) ⁕ `CONTINUE` ⁕ `DO` ... `LOOP` ⁕ `DO WHILE` ... `LOOP` ⁕ `FOR` ... `NEXT` ⁕ [`FUNCTION`](#function-name-arg1-as-type-arg2-as-type-as-type) ⁕ `GOTO` ⁕ [`IF` ... `THEN`](#if-expr1-then-expr2) ⁕ [`SELECT CASE`](#select-case-var) ⁕ [`SUB`](#sub-arg1-as-type-arg2-as-type) |
-| Console and debugging    | [`'`](#-single-quote) ⁕ `?` ⁕ `COLOR` ⁕ `MM.ERRMSG$` ⁕ `MM.ERRNO` ⁕ [`ON ERROR ABORT`](#on-error-abort) ⁕ [`ON ERROR IGNORE`](#on-error-ignore) ⁕ [`ON ERROR SKIP`](#on-error-skip) ⁕ [`PRINT`](#print-string) ⁕ `REM` |
-| Constants and variables  | `CONST` ⁕ `DIM` ⁕ `LOCAL` ⁕ `STATIC` |
-| Device settings and info | `COPYRIGHT` ⁕ [`MM.DEVICE$`](#mmdevice) ⁕ [`MM.DRIVE$`](#mmdrive) |
-| Files and folders        | `CHDIR` ⁕ `CLOSE` ⁕ `CWD$` ⁕ `DIR$` ⁕ `EOF` ⁕ `#INCLUDE` ⁕ `KILL` ⁕ `LOC` ⁕ [`OPEN` ... `AS`](#open) ⁕ `RENAME` ... `AS` |
-| Graphics                 | `BLIT` ⁕ `BOX` ⁕ `CIRCLE` ⁕ [`CLS`](#cls-color) ⁕ `DRAW3D` ⁕ `LOAD BMP` ⁕ `LOAD GIF` ⁕ `LOAD JPG` ⁕ `LOAD PNG` ⁕ `LINE` ⁕ `PAGE COPY` ⁕ `PAGE DISPLAY` ⁕ `PAGE SCROLL` ⁕ `PAGE WRITE` ⁕ `PIXEL` ⁕ `PIXEL FILL` ⁕ `MODE` ⁕ `RBOX` ⁕ [`RGB`](#rgb-number1-number2-number3-number4) ⁕ `SPRITE LOAD` ⁕ `SPRITE SHOW` ⁕ `TEXT` |
-| Hardware I/O             | `DISTANCE` ⁕ [`INKEY$`](#inkey) ⁕ `PIN` |
-| Numbers and math         | `COS` ⁕ `DEG` ⁕ `EXP` ⁕ `FIX` ⁕ `FLOAT` ⁕ `HEX$` ⁕ `INTEGER` ⁕ `SGN` ⁕ `SIN` ⁕ `SQR` ⁕ [`STR$`](#str-number) |
+| Code flow                | [`CHOICE`](#choiceexpression-value1-value2) ⁕ `CONTINUE` ⁕ `DO` ... `LOOP` ⁕ `DO WHILE` ... `LOOP` ⁕ `END FUNCTION` ⁕ `END SUB` ⁕ `EXIT DO` ⁕ `EXIT FOR` ⁕ `EXIT FUNCTION` ⁕ `EXIT SUB` ⁕ `FOR` ⁕ [`FUNCTION`](#function-name-arg1-as-type-arg2-as-type-as-type) ⁕ `GOTO` ⁕ [`IF` ... `THEN`](#if-expr1-then-expr2) ⁕ `NEXT` ⁕ [`SELECT CASE`](#select-case-var) ⁕ [`SUB`](#sub-name-arg1-as-type-arg2-as-type) |
+| Debugging                | [`'`](#-single-quote) ⁕ `MM.ERRMSG$` ⁕ `MM.ERRNO` ⁕ [`ON ERROR ABORT`](#on-error-abort) ⁕ [`ON ERROR IGNORE`](#on-error-ignore) ⁕ [`ON ERROR SKIP`](#on-error-skip) ⁕ `REM` ⁕ `TRACE LIST` ⁕ `TRACE OFF` ⁕ `TRACE ON` |
+| Constants and variables  | `CONST` ⁕ `DIM` ⁕ `LOCAL` ⁕ `STATIC` ⁕ `VAR CLEAR` ⁕ `VAR RESTORE` ⁕ `VAR SAVE` ⁕|
+| Device settings and info | [`MM.DEVICE$`](#mmdevice) |
+| Files and folders        | `CHDIR` ⁕ `CLOSE` ⁕ `CWD$` ⁕ `DIR$` ⁕ `EOF` ⁕ `#INCLUDE` ⁕ [`KILL`](#kill) ⁕ `LOC` ⁕ [`OPEN` ... `AS`](#open) ⁕ `RENAME` ... `AS` |
+| Graphics                 | `BLIT` ⁕ `BOX` ⁕ `CIRCLE` ⁕ [`CLS`](#cls-color) ⁕ `DRAW3D` ⁕ `LOAD BMP` ⁕ `LOAD GIF` ⁕ `LOAD JPG` ⁕ `LOAD PNG` ⁕ `LINE` ⁕ `PAGE COPY` ⁕ `PAGE DISPLAY` ⁕ `PAGE SCROLL` ⁕ `PAGE WRITE` ⁕ `PIXEL` ⁕ `PIXEL FILL` ⁕ `MODE` ⁕ `RBOX` ⁕ [`RGB`](#rgb-number1-number2-number3-number4) ⁕ `SPRITE LOAD` ⁕ `SPRITE SHOW` ⁕ `TEXT` ⁕ `TRIANGLE` |
+| Graphics: Turtle         | `TURTLE BACKWARD` ⁕ `TURTLE BEGIN FILL` ⁕ `TURTLE DRAW CIRCLE` ⁕ `TURTLE DRAW LINE` ⁕ `TURTLE DRAW PIXEL` ⁕ `TURTLE DRAW TURTLE` ⁕ `TURTLE END FILL` ⁕ `TURTLE FILL PIXEL` ⁕ `TURTLE FORWARD` ⁕ `TURTLE HEADING` ⁕ `TURTLE FILL COLOUR` ⁕ `TURTLE MOVE` ⁕ `TURTLE PEN COLOUR` ⁕ `TURTLE PEN DOWN` ⁕ `TURTLE PEN UP ` ⁕ `TURTLE RESET` ⁕ `TURTLE TURN LEFT` ⁕ `TURTLE TURN RIGHT` |
+| I/O                      | `?` ⁕ `COLOR`/`COLOUR` ⁕ `DISTANCE` ⁕ [`INKEY$`](#inkey) ⁕ `PIN` ⁕  [`PRINT`](#print-port-value) ⁕ [`PRINT @`](#print-x-y-m-value) ⁕ `TEMPR` |
+| Numbers and math         | `COS` ⁕ `DEG` ⁕ `EXP` ⁕ `FIX` ⁕ `FLOAT` ⁕ `HEX$` ⁕ `INTEGER` ⁕ `SGN` ⁕ `SIN` ⁕ `SQR` ⁕ [`STR$`](#str-number) ⁕ `TAN` |
 | Program execution        | `AUTO` ⁕ `CHAIN` ⁕ `CLEAR` ⁕ `END` ⁕ `RUN` |
 | Sound                    | `PLAY TONE` ⁕ `PLAYMOD` ⁕ `PLAYMOD STOP` |
-| Strings                  | `INSTR` ⁕ `LEFT$` ⁕ `MID$` ⁕ [`RIGHT$`](#rightstr-number) ⁕ `STRING` ⁕ `UCASE$` ⁕ `VAL` |
-| Timing                   | `DATE$` ⁕ `DATETIME$` ⁕ `DAY$` ⁕ `EPOCH` ⁕ `GETSCANLINE` ⁕ `PAUSE` ⁕ `WATCHDOG` |
+| Strings                  | `INSTR` ⁕ [`LEFT$`](#left-str-number) ⁕ `MID$` ⁕ [`RIGHT$`](#right-str-number) ⁕ `STRING` ⁕ `UCASE$` ⁕ `VAL` |
+| Timing                   | `DATE$` ⁕ `DATETIME$` ⁕ `DAY$` ⁕ `EPOCH` ⁕ `GETSCANLINE` ⁕ `PAUSE` ⁕ `TIME$` ⁕ `TIMER` ⁕ `WATCHDOG` ⁕ `WATCHDOG OFF` |
 
----
+
+## Commands
 
 ### ' (single quote)
 A single quote precedes a comment. This is the same as, but preferred over, using REM.
@@ -30,29 +32,12 @@ PRINT #1, STR$(result)
 
 ---
 
-### ? 
-
-### AUTO
-
-### BLIT
-
-### BOX
-
---- 
-
 ### CHOICE (*expression*, *value1*, *value2*)
 If the first expression is true, *value1* is returned; otherwise, *value2* is returned.
+
 ```BASIC
 timeOfDay = CHOICE(hour >= 12, "PM", "AM")
 ```
-
----
-
-### CIRCLE
-
-### CLEAR
-
-### CLOSE
 
 ---
 
@@ -76,26 +61,8 @@ CONST LINEHEIGHT = 30
 
 ---
 
-### COPYRIGHT
-
-### DATA
-
-### DIM
-
-### END
-
-### ERASE
-
-### ERROR
-
-### FILES
-
-### FLOAT [(*number*)]
-
----
-
 ### FUNCTION *Name* ([*arg1* AS *TYPE*], [*arg2* AS *TYPE*]) AS *TYPE*
-A function is a subroutine that returns a value of the data type specified in the final AS *TYPE* declaration. A function without arguments should include a blank set of parentheses.
+A function is a subroutine that returns a value of the data type specified in the final AS *TYPE* declaration. A function without arguments should include a blank set of parentheses. `EXIT FUNCTION` can be used to exit the function early.
 
 ```BASIC
 FUNCTION GetAverage (number1 AS FLOAT, number2 AS FLOAT) AS FLOAT
@@ -103,11 +70,7 @@ FUNCTION GetAverage (number1 AS FLOAT, number2 AS FLOAT) AS FLOAT
 END FUNCTION
 ```
 
-*See also: [`SUB`](#sub-arg1-as-type-arg2-as-type)*
-
----
-
-### GOTO
+*See also: `EXIT FUNCTION`, [`SUB`](#sub-name-arg1-as-type-arg2-as-type)*
 
 ---
 
@@ -124,49 +87,94 @@ ELSE
   PRINT "More than 10."
 ENDIF
 ```
+
 *See also: `SELECT CASE`*
 
 ---
 
 ### INKEY$
+Reads keyboard input buffer and returns a single character.
 
 ```BASIC
   IF INKEY$ = "q" THEN EXIT SUB
 ```
 
-### INTEGER [(*number*)]
+*See also: `ASC`, `CHR$`*
+
+---
 
 ### KILL
+Deletes a file from the SD card.
 
-### LOCAL
+```BASIC
+  KILL "file.tmp"
+```
 
-### MAP
+---
+
+### LEFT$ (*str*, *number*)
+
+Returns the leftmost *number* letters of a string (*str*).
+
+```BASIC
+PRINT LEFT$("Hello world!xxxxx", 12)
+```
+
+*See also: `MID$`*, [`RIGHT$`](#right-str-number)
+
+---
 
 ### MM.DEVICE$
+A read-only variable that contains the device MMBasic is running on.
 
-### MM.DRIVE$
+---
 
-### MM.ERRMSG
+### PRINT [#*port*] *value*
+Prints text to the console, file, or serial port specified by the number #*port*. If #*port* is not specified, the default is #0, which will print to the console (VGA display and/or serial).
 
-### MM.ERRNO
+```BASIC
+' "Hello world!" will print on a single line
+' because the semicolon supresses the default
+' line break.
+PRINT "Hello";
+PRINT " world!"
 
-### ON ERROR ABORT
+' A comma between values will be printed as a
+' tab. A semicolon or space between values will
+' not print.
+PRINT firstname, age
 
-### ON ERROR IGNORE
+' This will print to file.txt and the COM1 
+' serial port.
+OPEN "file.txt" FOR APPEND AS #2
+PRINT #2 "Last modified: " timestamp
+OPEN "COM1:9600" AS #3
+PRINT #3 "File timestamp updated."
+```
 
-### ON ERROR SKIP
+*See also: `OPEN` ... `AS`, `OPEN` ... `FOR`, [`PRINT @`](#print-x-y-m-value)*
 
-### OPEN
+---
 
-### OPTION BREAK
+### PRINT @(*x*, [*y,*] [*m*]) *value*
+An alternative [`PRINT`](#print-port-value) command where x and y coordinates and an optional color mode *m* can be specified. The options for *m* are 0 (normal), 1 (transparent background), 2 (inverted), and 5 (inverted and transpent background). The `PRINT @` command does not automatically wrap lines, allowing for text to run outside of screen boundaries. Multiple `PRINT @` coordinates can be specified inline as shown in the example below.
 
-### OPTION ERROR
+```BASIC
+PRINT @(100, 10) "Guess what?)
+PRINT @(200, 100, 1) "These words can" @(205, 105, 1) "overlap"
+PRINT @(-10, -10) "or print off-screen."
+```
 
-### PRINT *string*
+*See also: [`PRINT`](#print-port-value)*
 
-### RBOX
+---
 
 ### RENAME *string1* AS *string2*
+Renames a file on the SD card.
+
+```BASIC
+RENAME "file.tmp" AS "file.txt"
+```
 
 ---
 
@@ -185,18 +193,18 @@ COLOR rgb(white), rgb(240, 20, 180)
 
 ### RIGHT$ (*str*, *number*)
 Returns the rightmost *number* letters of a string (*str*).
+
 ```BASIC
 fileExtension = RIGHT$(filename, 3)
 ```
 
----
-
-### RUN
+*See also: [`LEFT$`](#left-str-number), `MID$`*
 
 ---
 
 ### SELECT CASE *var*
-An alternative to `IF`/`THEN` statements.
+An alternative to using `IF`/`THEN` statements for code branches.
+
 ```BASIC
 SELECT CASE numberGuess
   CASE 4, 9, 12 TO 14
@@ -210,38 +218,24 @@ SELECT CASE numberGuess
 
 ---
 
-### SGN
-
-### SIN
-
-### SQR
-
-### STATIC
-
----
-
 ### STR$ (*number*)
 Parses numeric data as a string.
+
 ```BASIC
-PRINT "Your price is " + STR$(price)
+LOCAL STRING pricetag = "$" + STR$(price)
 ```
 
 ---
 
-### STRING ([*number*])
+### SUB *Name* ([*arg1* AS *TYPE*], [*arg2* AS *TYPE*])
+The first line of a subroutine sets its name and any optional arguments in parentheses. The last line is a subroutine is `END SUB`. `EXIT SUB` can be called within the subroutine to exit early. 
 
----
-
-### SUB ([*arg1* AS *TYPE*], [*arg2* AS *TYPE*])
-A subroutine has optional arguments.
 ```BASIC
 SUB DebugPrint (msg AS STRING)
   PRINT #8, msg
 END SUB
+
+DebugPrint "Hello!"
 ```
 
----
-
-### VAL
-
----
+*See also: `END SUB`, `EXIT SUB`, [`FUNCTION`](#function-name-arg1-as-type-arg2-as-type-as-type)*
