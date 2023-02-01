@@ -4,17 +4,17 @@
 | Category                 | Commands |
 |--------------------------|----------|
 | Code flow                | [`CHOICE`](#choiceexpression-value1-value2) ⁕ `CONTINUE` ⁕ `DO` ... `LOOP` ⁕ `DO WHILE` ... `LOOP` ⁕ `END FUNCTION` ⁕ `END SUB` ⁕ `EXIT DO` ⁕ `EXIT FOR` ⁕ `EXIT FUNCTION` ⁕ `EXIT SUB` ⁕ `FOR` ⁕ [`FUNCTION`](#function-name-arg1-as-type-arg2-as-type-as-type) ⁕ `GOTO` ⁕ [`IF` ... `THEN`](#if-expr1-then-expr2) ⁕ `NEXT` ⁕ [`SELECT CASE`](#select-case-var) ⁕ [`SUB`](#sub-name-arg1-as-type-arg2-as-type) |
-| Debugging                | [`'`](#-single-quote) ⁕ `MM.ERRMSG$` ⁕ `MM.ERRNO` ⁕ [`ON ERROR ABORT`](#on-error-abort) ⁕ [`ON ERROR IGNORE`](#on-error-ignore) ⁕ [`ON ERROR SKIP`](#on-error-skip) ⁕ `REM` ⁕ `TRACE LIST` ⁕ `TRACE OFF` ⁕ `TRACE ON` |
-| Constants and variables  | `CONST` ⁕ `DIM` ⁕ `LOCAL` ⁕ `STATIC` ⁕ `VAR CLEAR` ⁕ `VAR RESTORE` ⁕ `VAR SAVE` ⁕|
+| Debugging                | [`'`](#-single-quote) ⁕ `#MMDEBUG ON` ⁕ `#MMDEBUG OFF` ⁕ `MM.ERRMSG$` ⁕ `MM.ERRNO` ⁕ `#COMMENT` ⁕ [`ON ERROR ABORT`](#on-error-abort) ⁕ [`ON ERROR IGNORE`](#on-error-ignore) ⁕ [`ON ERROR SKIP`](#on-error-skip) ⁕ `REM` ⁕ `TRACE LIST` ⁕ `TRACE OFF` ⁕ `TRACE ON` |
+| Constants and variables  | `CONST` ⁕ `#DEFINE` ⁕ `DIM` ⁕ `LOCAL` ⁕ `STATIC` ⁕ `VAR CLEAR` ⁕ `VAR RESTORE` ⁕ `VAR SAVE` ⁕|
 | Device settings and info | [`MM.DEVICE$`](#mmdevice) |
-| Files and folders        | `CHDIR` ⁕ `CLOSE` ⁕ `CWD$` ⁕ `DIR$` ⁕ `EOF` ⁕ `#INCLUDE` ⁕ [`KILL`](#kill) ⁕ `LOC` ⁕ [`OPEN` ... `AS`](#open) ⁕ `RENAME` ... `AS` |
-| Graphics                 | `BLIT` ⁕ `BOX` ⁕ `CIRCLE` ⁕ [`CLS`](#cls-color) ⁕ `DRAW3D` ⁕ `LOAD BMP` ⁕ `LOAD GIF` ⁕ `LOAD JPG` ⁕ `LOAD PNG` ⁕ `LINE` ⁕ `PAGE COPY` ⁕ `PAGE DISPLAY` ⁕ `PAGE SCROLL` ⁕ `PAGE WRITE` ⁕ `PIXEL` ⁕ `PIXEL FILL` ⁕ `MODE` ⁕ `RBOX` ⁕ [`RGB`](#rgb-number1-number2-number3-number4) ⁕ `SPRITE LOAD` ⁕ `SPRITE SHOW` ⁕ `TEXT` ⁕ `TRIANGLE` |
+| Files and folders        | `CHDIR` ⁕ `CLOSE` ⁕ `CWD$` ⁕ `DIR$` ⁕ `EOF` ⁕ `#INCLUDE` ⁕ [`KILL`](#kill) ⁕ `LOC` ⁕ `MKDIR` ⁕ [`OPEN` ... `AS`](#open) ⁕ `RENAME` ... `AS` |
+| Graphics                 | `BLIT` ⁕ `BOX` ⁕ `CIRCLE` ⁕ [`CLS`](#cls-color) ⁕ `DRAW3D` ⁕ `LOAD BMP` ⁕ `LOAD GIF` ⁕ `LOAD JPG` ⁕ `LOAD PNG` ⁕ `LINE` ⁕ `MAP RESET` ⁕ `MAP SET` ⁕ `MODE` ⁕ `PAGE COPY` ⁕ `PAGE DISPLAY` ⁕ `PAGE RESIZE` ⁕ `PAGE SCROLL` ⁕ `PAGE STITCH` ⁕ `PAGE WRITE` ⁕ `PIXEL` ⁕ `PIXEL FILL` ⁕ `MODE` ⁕ `RBOX` ⁕ [`RGB`](#rgb-number1-number2-number3-number4) ⁕ `SPRITE LOAD` ⁕ `SPRITE SHOW` ⁕ `TEXT` ⁕ `TRIANGLE` |
 | Graphics: Turtle         | `TURTLE BACKWARD` ⁕ `TURTLE BEGIN FILL` ⁕ `TURTLE DRAW CIRCLE` ⁕ `TURTLE DRAW LINE` ⁕ `TURTLE DRAW PIXEL` ⁕ `TURTLE DRAW TURTLE` ⁕ `TURTLE END FILL` ⁕ `TURTLE FILL PIXEL` ⁕ `TURTLE FORWARD` ⁕ `TURTLE HEADING` ⁕ `TURTLE FILL COLOUR` ⁕ `TURTLE MOVE` ⁕ `TURTLE PEN COLOUR` ⁕ `TURTLE PEN DOWN` ⁕ `TURTLE PEN UP ` ⁕ `TURTLE RESET` ⁕ `TURTLE TURN LEFT` ⁕ `TURTLE TURN RIGHT` |
-| I/O                      | `?` ⁕ `COLOR`/`COLOUR` ⁕ `DISTANCE` ⁕ [`INKEY$`](#inkey) ⁕ `PIN` ⁕  [`PRINT`](#print-port-value) ⁕ [`PRINT @`](#print-x-y-m-value) ⁕ `TEMPR` |
+| I/O                      | `?` ⁕ `ADC FREQUENCY` ⁕ `ADC OPEN` ⁕ `COLOR`/`COLOUR` ⁕ `DISTANCE` ⁕ [`INKEY$`](#inkey) ⁕ `PIN` ⁕  [`PRINT`](#print-port-value) ⁕ [`PRINT @`](#print-x-y-m-value) ⁕ `TEMPR` |
 | Numbers and math         | `COS` ⁕ `DEG` ⁕ `EXP` ⁕ `FIX` ⁕ `FLOAT` ⁕ `HEX$` ⁕ `INTEGER` ⁕ `SGN` ⁕ `SIN` ⁕ `SQR` ⁕ [`STR$`](#str-number) ⁕ `TAN` |
-| Program execution        | `AUTO` ⁕ `CHAIN` ⁕ `CLEAR` ⁕ `END` ⁕ `RUN` |
+| Program execution        | `AUTO` ⁕ `CHAIN` ⁕ `CLEAR` ⁕ `END` ⁕ `NEW` ⁕ `RUN` |
 | Sound                    | `PLAY TONE` ⁕ `PLAYMOD` ⁕ `PLAYMOD STOP` |
-| Strings                  | `INSTR` ⁕ [`LEFT$`](#left-str-number) ⁕ `MID$` ⁕ [`RIGHT$`](#right-str-number) ⁕ `STRING` ⁕ `UCASE$` ⁕ `VAL` |
+| Strings                  | `INSTR` ⁕ [`LEFT$`](#left-str-number) ⁕ `MID$` ⁕ [`RIGHT$`](#right-str-number) ⁕ `SPACE$` ⁕ `STRING` ⁕ `TAB` ⁕ `UCASE$` ⁕ `VAL` |
 | Timing                   | `DATE$` ⁕ `DATETIME$` ⁕ `DAY$` ⁕ `EPOCH` ⁕ `GETSCANLINE` ⁕ `PAUSE` ⁕ `TIME$` ⁕ `TIMER` ⁕ `WATCHDOG` ⁕ `WATCHDOG OFF` |
 
 
